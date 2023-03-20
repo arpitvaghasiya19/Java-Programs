@@ -1,4 +1,4 @@
-public class NQueen {
+public class NQueens {
     public static void main(String[] args) {
         int n = 4 ;
         boolean[][] board =new boolean[n][n];
@@ -23,11 +23,11 @@ public class NQueen {
                 board[row][col] = false;
             }
         }
-    return count;
+        return count;
     }
 
      static boolean isSafe(boolean[][] board, int row, int col) {
-        //checking of vertical row..
+        //checking of vertical row...
         for (int i = 0; i < row; i++) {
             if(board[i][col]){
                 return false;

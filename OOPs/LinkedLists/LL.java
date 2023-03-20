@@ -50,7 +50,7 @@ public class LL {
             insertLast(val);
             return;
         }
-        Node temp = head; //Loop will start from 1 bcz head is at 1
+        Node temp = head; //Loop will start from 1 bcz head is at 0
         for (int i = 1; i < index; i++) {
             temp = temp.next; //original value at index
         }
@@ -69,6 +69,7 @@ public class LL {
         size--;
         return val;
     }
+
     public int deleteLast(){
         if(size <= 1){
             return deleteFirst();
@@ -79,7 +80,8 @@ public class LL {
         tail = secondLast;
         tail.next = null;
         return val;
-    }
+    }  
+
     public Node get(int index){
         Node node = head;
         for (int i = 0; i < index; i++) {
@@ -99,6 +101,17 @@ public class LL {
         int val = prev.next.value;
         prev.next = prev.next.next;
         return val;
+    }
+
+    public Node find(int value){
+        Node node = head;
+        while(node != null){
+            if(node.value == value){
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
     }
 
     private class Node{

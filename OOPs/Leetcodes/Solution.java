@@ -1,25 +1,25 @@
 package Leetcodes;
 
-<<<<<<< HEAD
+
 
 import java.util.Collections;
 import java.util.List;
 
 
-class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        for(int i=0;i <= nums.length - 1; i ++){
-            int last = nums.length -i - 1;
-            while(i < last){
-                if(nums[i] + nums[last] == target){
-                    return new int[]{i,last};
-                }
-                i++;
-            }
-        }
-        return new int[]{-1,-1};
-    }
-}
+// class Solution {
+//     public int[] twoSum(int[] nums, int target) {
+//         for(int i=0;i <= nums.length - 1; i ++){
+//             int last = nums.length -i - 1;
+//             while(i < last){
+//                 if(nums[i] + nums[last] == target){
+//                     return new int[]{i,last};
+//                 }
+//                 i++;
+//             }
+//         }
+//         return new int[]{-1,-1};
+//     }
+// }
 
 
 
@@ -68,7 +68,7 @@ class Solution {
 //    }
 //
 //}
-=======
+
 class Solution {
     public static void main(String[] args) {
         System.out.println(gcdOfStrings("AB","ABAB"));
@@ -90,4 +90,4 @@ class Solution {
         return str2.substring(0,a);
     }
 }
->>>>>>> 94c3593 (java)
+
